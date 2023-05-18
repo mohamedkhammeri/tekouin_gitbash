@@ -7,4 +7,5 @@ while read -r line; do
     COMMAND_SHEL=($line[6])
     USER_ID_INFO=($line[4])
     PASSWORD=($line[1]) | awk -F: '{print $2}')
+    echo "test checker"
     
