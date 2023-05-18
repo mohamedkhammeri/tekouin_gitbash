@@ -7,5 +7,6 @@ while read -r line; do
     COMMAND_SHEL=($line[6])
     USER_ID_INFO=($line[4])
     PASSWORD=($line[1]) | awk -F: '{print $2}')
-    echo "test checker"
+    echo "The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $COMMAND_SHEL. USER ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER_ID_INFO"
+done < /etc/passwd
     
